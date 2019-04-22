@@ -69,8 +69,8 @@ class Runtime {
         case '^': this.pushTmp(); break
         case '[': this.startLoop(); break
         case ']': this.endLoop(); break
-        case '.': this.print(); break
-        case '|': this.flush(); break
+        case '.': this.print(); this.flush(); break
+        case '|': this.print(); break
         default: finished = true
       }
       this.cursor++

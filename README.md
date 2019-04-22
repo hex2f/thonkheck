@@ -28,17 +28,17 @@ new Runtime(
 
 ## What tokens are there?
 
-| Token | What it does                                                               |
-|-------|----------------------------------------------------------------------------|
-| +     | Add one to the current cell                                                |
-| -     | Subtract one from the current cell                                         |
-| >     | Move to the next cell                                                      |
-| <     | Move to the previous cell                                                  |
-| ^     | Clone the current cell to the temp cell                                    |
-| *     | Multiply the current cell with the temp cell, outputs to current cell      |
-| /     | Divide the current cell with the temp cell, outputs to current cell        |
-| [     | Push a new loopback position                                               |
-| ]     | If the current cell is 0, move on. Else: go back to the last loopback      |
-| .     | Get the current cell, convert to string (UTF-16), push to the print buffer |
-| \|    | Flush the current print buffer                                             |
-| @     | Starts and ends comments, everything between is ignored on runtime         |
+| Token | What it does                                                                  |
+|-------|-------------------------------------------------------------------------------|
+| +     | Add one to the current cell                                                   |
+| -     | Subtract one from the current cell                                            |
+| >     | Move to the next cell                                                         |
+| <     | Move to the previous cell                                                     |
+| ^     | Clone the current cell to the temp cell                                       |
+| *     | Multiply the current cell with the temp cell, outputs to current cell         |
+| /     | Divide the current cell with the temp cell, outputs to current cell           |
+| [     | Push a new loopback position                                                  |
+| ]     | If the current cell is 0, move on. Else: go back to the last loopback         |
+| .     | Convert the current cell to a string (UTF-16), push to print buffer and flush |
+| \|    | Get the current cell, convert to string (UTF-16), push to the print buffer    |
+| @     | Starts and ends comments, everything between is ignored on runtime            |
