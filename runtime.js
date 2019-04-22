@@ -53,12 +53,6 @@ class Runtime {
     let finished = false
 
     while (!finished) {
-      console.log({
-        tape: this.tape,
-        pointer: this.pointer,
-        temp: this.tmp,
-        token: this.tokens[this.cursor]
-      })
       switch (this.tokens[this.cursor]) {
         case '+': this.add(); break
         case '-': this.sub(); break
