@@ -36,7 +36,7 @@ new Runtime(
 | <     | Move to the previous cell                                                  |
 | ^     | Clone the current cell to the temp cell                                    |
 | *     | Multiply the current cell with the temp cell, outputs to current cell      |
-| /     | Divide the current cell with the temp cell                                 |
+| /     | Divide the current cell with the temp cell, outputs to current cell        |
 | [     | Push a new loopback position                                               |
 | ]     | If the current cell is 0, move on. Else: go back to the last loopback      |
 | .     | Get the current cell, convert to string (UTF-16), push to the print buffer |
